@@ -63,7 +63,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center text-textLight">
                 <i className="ri-phone-line mr-3 text-primary"></i>
-                +49 (0) 89 1234 5678
+                +49 173 9712627
               </li>
               <li className="flex items-center text-textLight">
                 <i className="ri-map-pin-line mr-3 text-primary"></i>

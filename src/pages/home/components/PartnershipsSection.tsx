@@ -15,7 +15,7 @@ export default function PartnershipsSection() {
     {
       name: 'IPI',
       logo: 'https://static.readdy.ai/image/3d57a04e89a19f07dff1eb2283051a78/57b4c3017e37c4d59b90f50542c4406f.png',
-      description: 'Investment Promotion Initiative - Strategic partnership'
+      description: 'Indian Plastic Institute- Strategic partnership'
     }
   ];
 
