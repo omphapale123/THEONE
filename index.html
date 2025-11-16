@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Offshorebrücke - The Digital Bridge for EU-India SME Expansion</title>
+
+    <meta name="description" content="Automating compliance, building trust, and enabling seamless cross-border partnerships between EU and India. RegTech platform for SME expansion." />
+    <meta name="keywords" content="EU India expansion, SME compliance, RegTech platform, cross-border partnerships, digital bridge" />
+    <link rel="canonical" href="https://offshorebrucke.com/" />
+    <meta name="last-modified" content="2024-01-15" />
+
+    <!-- Social Media Tags -->
+    <meta property="og:title" content="Offshorebrücke - The Digital Bridge for EU-India SME Expansion" />
+    <meta property="og:description" content="Automating compliance, building trust, and enabling seamless cross-border partnerships between EU and India." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://offshorebrucke.com/" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+
+    <!-- Trae preview script (keep if you're using Trae) -->
+    <script type="module" src="/preview-inject/index.ts"></script>
+  </head>
+
+  <body>
+
+    <!-- 🌍 GOOGLE TRANSLATE WIDGET -->
+    <div id="google_translate_element"></div>
+<!-- 🌍 Floating Language Button -->
+<div id="language-widget">
+  <button id="lang-btn">
+    🌐
+  </button>
+
+  <div id="lang-menu">
+    <div class="lang-option" data-lang="en">🇬🇧 English</div>
+    <div class="lang-option" data-lang="de">🇩🇪 German</div>
+    <div class="lang-option" data-lang="fr">🇫🇷 French</div>
+    <div class="lang-option" data-lang="es">🇪🇸 Spanish</div>
+    <div class="lang-option" data-lang="hi">🇮🇳 Hindi</div>
+    <div class="lang-option" data-lang="ar">🇸🇦 Arabic</div>
+    <div class="lang-option" data-lang="zh-CN">🇨🇳 Chinese</div>
+  </div>
+</div>
+
+<!-- Hidden Google Translate Element -->
+<div id="google_translate_element" style="display:none"></div>
+
+    <!-- React root -->
+    <div id="root"></div>
+
+    <!-- Google Translate Setup -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,de,fr,es,hi,ar,ta,te,zh-CN",
+            autoDisplay: false,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script 
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+
+    <!-- React / Vite entry -->
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        includedLanguages: "en,de,fr,es,hi,ar,zh-CN",
+        autoDisplay: false,
+      },
+      "google_translate_element"
+    );
+  }
+
+  // toggle menu
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("lang-btn");
+    const menu = document.getElementById("lang-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".lang-option").forEach((option) => {
+      option.addEventListener("click", () => {
+        const lang = option.getAttribute("data-lang");
+        const select = document.querySelector(".goog-te-combo");
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+        menu.classList.remove("open");
+      });
+    });
+  });
+</script>
+
+  </body>
+</html>

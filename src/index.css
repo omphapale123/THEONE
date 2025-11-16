@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes ship-1 {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(50vw) translateY(-20px);
+    }
+    100% {
+      transform: translateX(100vw) translateY(0);
+    }
+  }
+
+  @keyframes ship-2 {
+    0% {
+      transform: translateX(0) translateY(0) scaleX(-1);
+    }
+    50% {
+      transform: translateX(-50vw) translateY(20px) scaleX(-1);
+    }
+    100% {
+      transform: translateX(-100vw) translateY(0) scaleX(-1);
+    }
+  }
+
+  @keyframes ship-3 {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      transform: translateX(120vw) translateY(-30px);
+    }
+  }
+
+  .animate-ship-1 {
+    animation: ship-1 45s linear infinite;
+  }
+
+  .animate-ship-2 {
+    animation: ship-2 50s linear infinite;
+  }
+
+  .animate-ship-3 {
+    animation: ship-3 35s linear infinite;
+  }
+}
+
+
+/* ---------------------------------------------- */
+/* 🌍 GOOGLE TRANSLATE — BOTTOM LEFT FLOATING BOX */
+/* ---------------------------------------------- */
+
+#google_translate_element {
+  position: fixed;
+  bottom: 20px;           /* ⬅ Bottom left */
+  left: 20px;
+  z-index: 999999;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 14px;     /* Rounded box */
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12); /* Soft shadow */
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);             /* Glass effect */
+}
+
+/* Subtle hover animation */
+#google_translate_element:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* Stylish dropdown */
+#google_translate_element select.goog-te-combo {
+  padding: 8px 10px !important;
+  border-radius: 8px !important;
+  border: 1px solid #d1d5db !important;
+  background: #ffffff !important;
+  font-size: 14px !important;
+  color: #111827 !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: 0.2s ease;
+}
+
+/* Hover for dropdown */
+#google_translate_element select.goog-te-combo:hover {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.25) !important;
+}
+
+/* Hide Google’s logo & unwanted text */
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-gadget img {
+  display: none !important;
+}
+
+/* Prevent Google UI from messing layout */
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+/* Prevent layout shift inside widget */
+.goog-te-gadget {
+  font-size: 0 !important;
+  line-height: 0 !important;
+  height: auto !important;
+}
+/* ---------------------------------------------- */
+/* 🌐 Floating Globe Button + Flag Dropdown       */
+/* ---------------------------------------------- */
+
+#language-widget {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 999999;
+}
+
+/* Globe button */
+#lang-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease;
+}
+
+#lang-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+}
+
+/* Dropdown menu */
+#lang-menu {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  padding: 10px 0;
+  width: 180px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+#lang-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0px);
+}
+
+/* Flag options */
+.lang-option {
+  padding: 10px 14px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.lang-option:hover {
+  background: #f3f4f6;
+}
+
+/* Hide Google default UI */
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-gadget img {
+  display: none !important;
+}
+
+#google_translate_element {
+  position: absolute;
+  visibility: hidden;
+  left: -9999px;
+}
