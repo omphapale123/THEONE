@@ -108,7 +108,7 @@ export default function HeroSection() {
             {/* Partnerships Information */}
             <div className="mt-6 lg:mt-8 p-4 lg:p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20">
               <div className="flex flex-col items-center lg:items-start">
-                <div className="text-sm lg:text-base text-textLight font-medium mb-4 text-center lg:text-left">Partnerships</div>
+                <div className="text-sm lg:text-base text-textLight font-medium mb-4 text-center lg:text-left"></div>
                 <div className="flex items-center justify-center lg:justify-start gap-6 flex-wrap">
                   <img 
                     src="https://static.readdy.ai/image/3d57a04e89a19f07dff1eb2283051a78/8e5fc99c658f0829c6edf18226752648.png" 
