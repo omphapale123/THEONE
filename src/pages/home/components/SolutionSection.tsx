@@ -74,19 +74,8 @@ export default function SolutionSection() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-16 animate-fade-in">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://offshorebruckedemo.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#e4a513] text-white hover:bg-[#e4a513]/90 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 whitespace-nowrap cursor-pointer inline-flex items-center justify-center"
-            >
-              <i className="ri-play-line mr-2"></i>
-              Demo
-            </a>
-          </div>
+       
+          
         </div>
       </div>
     </section>
