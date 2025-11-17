@@ -59,7 +59,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center text-textLight">
                 <i className="ri-mail-line mr-3 text-primary"></i>
-                info@offshorebrucke.com
+                offshorebruecke@gmail.com
               </li>
               <li className="flex items-center text-textLight">
                 <i className="ri-phone-line mr-3 text-primary"></i>
