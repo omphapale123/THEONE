@@ -64,7 +64,9 @@ export default function Footer() {
               <li className="flex items-center text-textLight">
                 <i className="ri-phone-line mr-3 text-primary"></i>
                 +49 173 9712627
-                +91 9699216625
+                <li className="flex items-center text-textLight">
+                <i className="ri-phone-line mr-3 text-primary"></i>
+                  +91 9699216625
               </li>
               <li className="flex items-center text-textLight">
                 <i className="ri-map-pin-line mr-3 text-primary"></i>
