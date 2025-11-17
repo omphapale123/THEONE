@@ -72,12 +72,6 @@ export default function SolutionSection() {
               </div>
             </div>
           ))}
-        </div>
-
-       
-          
-        </div>
-      </div>
     </section>
   );
 }
