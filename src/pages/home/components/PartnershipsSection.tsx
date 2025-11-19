@@ -1,21 +1,22 @@
-
-
 export default function PartnershipsSection() {
   const partnerships = [
     {
       name: 'TUM',
       logo: 'https://static.readdy.ai/image/3d57a04e89a19f07dff1eb2283051a78/8e5fc99c658f0829c6edf18226752648.png',
-      description: 'Technical University of Munich - Leading research institution'
+      description: 'Technical University of Munich - Leading research institution',
+      category: 'University'
     },
     {
       name: 'UnternehmerTUM',
       logo: 'https://static.readdy.ai/image/3d57a04e89a19f07dff1eb2283051a78/b52c88738ecdc6ba9e2ada0ec6a2e2c1.png',
-      description: 'Europe\'s leading innovation and business creation center'
+      description: 'Europe\'s leading innovation and business creation center',
+      category: 'Innovation Center'
     },
     {
       name: 'IPI',
       logo: 'https://static.readdy.ai/image/3d57a04e89a19f07dff1eb2283051a78/57b4c3017e37c4d59b90f50542c4406f.png',
-      description: 'Indian Plastic Institute - Strategic partnership'
+      description: 'Indian Plastic Institute - Strategic partnership',
+      category: 'Industry Institute'
     }
   ];
 
